@@ -52,7 +52,9 @@ nav .Right a:hover {
 }
 
 .hero-section .about h2 {
-    font-size: 45px;
+    font-size: 32px;
+    font-weight: 600;
+    min-width: 280
 }
 
 .hero-section .about .links {
@@ -81,27 +83,98 @@ nav .Right a:hover {
 }
 
 .hero-section .pic img {
-    border-radius: 50%;
+    border-radius: 100%;
+    border: #1f242d 0.5px solid;
+}
+
+/* Section 2 Skills */
+
+.skill-section {
+    padding: 0 50px;
+    margin-top: 150px;
+    margin-bottom: 00px;
+}
+
+.skill-section h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.skill-section .skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-section .skills .skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+/* Section 3 Resume */
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.resume {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.resume .view-btn {
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 1s ease;
+}
+
+.view-btn:hover {
+    background-color: orange;
+}
+
+.resume .dl-btn {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 1s ease;
+}
+
+.dl-btn:hover {
+    background-color: orange;
 }
 
 /* Section 4 Contact */
+
 .contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background-color: #1f242d;
     padding: 20px;
+    color: white;
 }
 
 .contact h2 {
     text-align: center;
     font-size: 45px;
     margin-bottom: 20px;
+    color: white;
 }
 
 .contact form {
-    background-color: #1f242d;
     padding: 30px;
     border-radius: 8px;
     width: 100%;
@@ -140,13 +213,24 @@ nav .Right a:hover {
     border: none;
     border-radius: 4px;
     font-size: 16px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
     background-color: orange;
 }
+
+footer {
+    padding: 20px;
+    background-color: #1f242d;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -234,6 +318,10 @@ nav .Right a:hover {
         text-align: center;
     }
 
+    footer p {
+        font-size: 15px;
+    }
+
 }
 
 /* For screens smaller than 600px (small tablets, large phones) */
@@ -273,6 +361,17 @@ nav .Right a:hover {
     .hero-section .about p {
         font-size: 20px;
         text-align: center;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    .resume .view-btn {
+        display: block;
+    }
+    .resume .dl-btn {
+        display: block;
     }
 
 }
@@ -315,5 +414,16 @@ nav .Right a:hover {
     .hero-section .about p {
         font-size: 15px;
         text-align: center;
+    }
+    
+    footer p {
+        font-size: 10px;
+    }
+
+    .resume .view-btn {
+        display: block;
+    }
+    .resume .dl-btn {
+        display: block;
     }
 }
