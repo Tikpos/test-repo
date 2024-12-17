@@ -30,6 +30,7 @@ nav .Right a {
     margin: 0 10px;
     font-weight: 500;
     color: black;
+    transition: .5s ease;
 }
 
 nav .Right a:hover {
@@ -52,13 +53,12 @@ nav .Right a:hover {
 }
 
 .hero-section .about h2 {
-    font-size: 32px;
+    font-size: 45px;
     font-weight: 600;
-    min-width: 280
 }
 
 .hero-section .about .links {
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .hero-section .about .links a {
@@ -68,12 +68,11 @@ nav .Right a:hover {
     border-radius: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-    transition: 1s;
+    transition: .5s ease;
 }
 
 .hero-section .about .links a:hover {
     color: orange;
-    border: 2px orange;
 }
 
 .about .pic {
@@ -91,7 +90,7 @@ nav .Right a:hover {
 
 .skill-section {
     padding: 0 50px;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 00px;
 }
 
@@ -105,16 +104,6 @@ nav .Right a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.skill-section .skills .skill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    padding: 10px 20px;
-    flex-direction: column;
-    margin-bottom: 150px;
 }
 
 /* Section 3 Resume */
