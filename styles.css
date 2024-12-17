@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Nav Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+    height: 80px;
+    background-color: #1f242d;
+}
+
+.Left::first-letter {
+    color: orange;
+}
+
+.Left a {
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+}
+
+nav .Right a {
+    margin: 0 10px;
+    font-weight: 500;
+    color: black;
+    transition: .5s ease;
+}
+
+nav .Right a:hover {
+    color: orange;
+}
+
+/* Section 1 Hero Section */
+.hero-section {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 50px 0;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-section .about {
+    flex: 5;
+}
+
+.hero-section .about h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.hero-section .about .links {
+    margin-top: 35px;
+}
+
+.hero-section .about .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .5s ease;
+}
+
+.hero-section .about .links a:hover {
+    color: orange;
+}
+
+.about .pic {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero-section .pic img {
+    border-radius: 100%;
+    border: #1f242d 0.5px solid;
+}
+
+/* Section 2 Skills */
+
+.skill-section {
+    padding: 0 50px;
+    margin-top: 100px;
+    margin-bottom: 00px;
+}
+
+.skill-section h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.skill-section .skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Section 3 Resume */
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.resume {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.resume .view-btn {
+    margin-bottom: 20px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 1s ease;
+}
+
+.view-btn:hover {
+    background-color: orange;
+}
+
+.resume .dl-btn {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 1s ease;
+}
+
+.dl-btn:hover {
+    background-color: orange;
+}
+
+/* Section 4 Contact */
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f242d;
+    padding: 20px;
+    color: white;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact form {
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.forms {
+    margin-bottom: 15px;
+}
+
+.forms label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.forms input,
+.forms textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.forms textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: orange;
+}
+
+footer {
+    padding: 20px;
+    background-color: #1f242d;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* MEDIA QUERIES */
+
+/* For screens smaller than 1024px (tablets, laptops, etc.) */
+@media (max-width: 1024px) {
+    nav {
+        padding: 0 30px; 
+    }
+
+    nav .Right a {
+        font-size: 24px;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .pic img {
+        width: 300px;
+    }
+
+    .hero-section .about h2 {
+        font-size: 35px;
+    }
+
+    .contact h2 {
+        font-size: 36px;
+    }
+
+    .links {
+        text-align: center;
+    }
+
+    .about h2 {
+        text-align: center;
+    }
+
+    .hero-section .about p {
+        text-align: center;
+    }
+}
+
+/* For screens smaller than 768px (tablets in portrait, smaller laptops) */
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .Right a {
+        font-size: 20px;
+    }
+
+    nav .Right a span {
+        display: none;
+    }
+
+    .hero-section .about h2 {
+        font-size: 30px;
+    }
+
+    .hero-section .about {
+        padding: 0 20px;
+    }
+
+    .contact form {
+        padding: 20px;
+    }
+
+    .links {
+        text-align: center;
+    }
+
+    .about h2 {
+        text-align: center;
+    }
+
+    .hero-section .about p {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+}
+
+/* For screens smaller than 600px (small tablets, large phones) */
+@media (max-width: 600px) {
+    nav {
+        padding: 0 15px;
+    }
+
+    nav .Right a {
+        font-size: 18px;
+    }
+
+    .hero-section .about h2 {
+        font-size: 25px;
+    }
+
+    .hero-section .about {
+        padding: 0 10px;
+    }
+
+    .contact form {
+        padding: 15px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+    }
+
+    .links {
+        text-align: center;
+    }
+
+    .about h2 {
+        text-align: center;
+    }
+    
+    .hero-section .about p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    .resume .view-btn {
+        display: block;
+    }
+    .resume .dl-btn {
+        display: block;
+    }
+
+}
+
+/* For screens smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+    .contact {
+        padding: 10px;
+    }
+
+    .contact h2 {
+        font-size: 22px;
+    }
+
+    .contact form {
+        padding: 10px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .forms input,
+    .forms textarea {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+    }
+
+    .links {
+        text-align: center;
+    }
+
+    .about h2 {
+        text-align: center;
+    }
+
+    .hero-section .about p {
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    footer p {
+        font-size: 10px;
+    }
+
+    .resume .view-btn {
+        display: block;
+    }
+    .resume .dl-btn {
+        display: block;
+    }
+}
