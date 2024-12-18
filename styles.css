@@ -6,7 +6,12 @@
     font-family: "Poppins", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Nav Bar */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -14,6 +19,8 @@ nav {
     align-items: center;
     height: 80px;
     background-color: #1f242d;
+    position: sticky;
+    top: 0; 
 }
 
 .Left::first-letter {
@@ -38,6 +45,7 @@ nav .Right a:hover {
 }
 
 /* Section 1 Hero Section */
+
 .hero-section {
     margin-bottom: 100px;
     display: flex;
@@ -263,6 +271,10 @@ footer p {
     .hero-section .about p {
         text-align: center;
     }
+
+    html {
+        scroll-behavior: smooth;
+    }
 }
 
 /* For screens smaller than 768px (tablets in portrait, smaller laptops) */
@@ -306,6 +318,10 @@ footer p {
 
     footer p {
         font-size: 15px;
+    }
+
+    html {
+        scroll-behavior: smooth;
     }
 
 }
@@ -360,6 +376,10 @@ footer p {
         display: block;
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
 }
 
 /* For screens smaller than 480px (mobile phones) */
@@ -411,5 +431,9 @@ footer p {
     }
     .resume .dl-btn {
         display: block;
+    }
+
+    html {
+        scroll-behavior: smooth;
     }
 }
